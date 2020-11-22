@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+        integrity="sha256-ECB9bbROLGm8wOoEbHcHRxlHgzGqYpDtNTgDTyDz0wg=" crossorigin="anonymous" />
+    <title>BookList</title>
+    <style>
+    	.success, .error
+    	{
+    		color :#fff;
+    		margin :5px 0 15px 0;
+    		padding :5px;
+    	}
+    	.success
+    	{
+    		background-color: green;
+    	}
+    	.error
+    	{
+    		background-color: red;
+    	}
+    	h2
+    	{
+    		color:#026461;
+    		font-weight: bold;
+    	}
+    	label ,th
+    	{
+    		color:#00b697;
+    	}
+    	input[type="submit"]
+    	{
+    		color:#fff;
+    		font-weight: bold;
+    		background-color: #00533c;
+    	}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Add Book</h2>
+        <form id="book-form">
+        	<div>
+        		<label for="title">Title</label>
+        		<input type="text" id="title" class="u-full-width">
+        	</div>
+        		<div>
+        		<label for="author">Author</label>
+        		<input type="text" id="author" class="u-full-width">
+        	</div>
+        		<div>
+        		<label for="isbn">ISBN#</label>
+        		<input type="text" id="isbn" class="u-full-width">
+        	</div>
+        	<div>
+        		<input type="submit" value="Submit" class="u-full-width submit">
+        	</div>
+
+        </form>
+
+        <table class="u-full-width">
+        	<thead>
+        		<tr>
+        			<th>Title</th>
+        			<th>Author</th>
+        			<th>ISBN</th>
+        		</tr>
+        	</thead>
+        	<tbody id="book-list">
+        	</tbody>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
